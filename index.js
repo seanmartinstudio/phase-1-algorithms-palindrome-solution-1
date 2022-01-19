@@ -1,6 +1,14 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const wordArray = word.split('')
+  const wordArrayReverse = wordArray.reverse()
+  const wordArrayReverseString = wordArrayReverse.join('')
+  if(word === wordArrayReverseString) {
+    return true
+  } else {
+    return false
+  } 
 }
+isPalindrome('mom')
 
 /* 
   Add your pseudocode here
